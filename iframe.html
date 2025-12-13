@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Home - Google Drive</title>
+    <style>
+      iframe { width: 100%; height: 100dvh; border: none }
+      body { margin: 0 }
+    </style>
+    <link rel="icon" type="image/png" href="/favicon.png">
+  </head>
+  <body>
+    <iframe id="frame"></iframe>
+    <script>
+      let params = new URLSearchParams(window.location.search);
+      let game = params.get("u");
+      frame.src = game;
+    </script>
+  </body>
+</html>

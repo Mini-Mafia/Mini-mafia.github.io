@@ -25,7 +25,9 @@
       let player = ruffle.createPlayer();
       document.getElementById("gm").appendChild(player);
       if (params.get("g")) {
-        player.load(params.get("g"));
+        player.load(`swf/${ params.get("g") }`);
+      } else {
+        alert("No game was specified");
       }
     </script>
   </body>

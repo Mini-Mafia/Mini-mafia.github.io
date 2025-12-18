@@ -12,7 +12,17 @@
       <h1 class="font-weight-bold">Mini Mafia</h1>
       <p>Unblocked games for all</p>
       <p>Made by @ohio-math @secretaayu-sys and @qwertycasacamsl</p>
-      <button class="btn btn-light">Cloak in about:blank (broken)</button>
+      <button class="btn btn-light" onclick="cloak()">Cloak in about:blank</button>
+
+<script>
+  function cloak() {
+    const url = "https://example.com"; // <-- your website here
+
+    const win = window.open("about:blank", "_blank");
+    if (!win) return;
+
+    win.document.open();
+    win.document.write(`>Cloak in about:blank (broken)</button>
       <button class="btn btn-light" id="data">Cloak in data:</button>
     </div>
     <div class="container text-center">

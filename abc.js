@@ -19,8 +19,11 @@ window.onload = () => {
   </style>
   </body>
   </html>`;
+
+  cloak_btn.onclick = () => {
+    const newTab = window.open("about:blank", "_blank");
   
-  const newTab = window.open("about:blank", "_blank");
-  newTab.document.open();
-  newTab.document.write(content);
+    newTab.document.open();
+    newTab.document.write(content);
+  };
 };

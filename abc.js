@@ -22,6 +22,4 @@ body {
 const htmlBlob = new Blob([content], { type: "text/html" });
 let url = URL.createObjectURL(htmlBlob);
 
-cloak_btn.onclick = () => {
-  window.open(url);
-}
+link.href = url;

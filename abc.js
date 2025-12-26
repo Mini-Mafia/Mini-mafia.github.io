@@ -26,7 +26,10 @@ window.onload = () => {
     newTab.document.write(content);
     newTab.document.close();
     let iframe = newTab.document.createElement("iframe");
-    iframe.src = "https://mini-mafia.github.io/";
-    newTab.document.body.appendChild(iframe);
+    
+    setTimeout(() => {
+      iframe.src = "https://mini-mafia.github.io/";
+      newTab.document.body.appendChild(iframe);
+    }, 1);
   };
 };

@@ -20,8 +20,7 @@ window.onload = () => {
   </body>
   </html>`;
   
-  const htmlBlob = new Blob([content], { type: "text/html" });
-  let url = URL.createObjectURL(htmlBlob);
-  
-  link.href = url;
+  const newTab = window.open("about:blank", "_blank");
+  newTab.document.open();
+  newTab.document.write(content);
 };

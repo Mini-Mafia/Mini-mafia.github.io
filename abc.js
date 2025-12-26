@@ -5,7 +5,6 @@ window.onload = () => {
   <!-- Please speed I need this my mom is kinda homeless -->
   <html>
   <body>
-  <iframe src="https://mini-mafia.github.io/" allow="fullscreen"></iframe>
   <style>
   iframe {
     height: 100dvh;
@@ -25,5 +24,8 @@ window.onload = () => {
   
     newTab.document.open();
     newTab.document.write(content);
+    newTab.document.close();
+    let iframe = newTab.document.createElement("iframe");
+    newTab.document.body.appendChild(iframe);
   };
 };

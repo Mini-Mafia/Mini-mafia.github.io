@@ -28,7 +28,7 @@ window.onload = () => {
     let iframe = newTab.document.createElement("iframe");
     
     setTimeout(() => {
-      iframe.src = "https://mini-mafia.github.io/";
+      iframe.src = "https://mini-mafia.github.io/genalphaisscrewed";
       newTab.document.body.appendChild(iframe);
     }, 1);
   };
